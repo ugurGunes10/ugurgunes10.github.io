@@ -123,12 +123,8 @@ img,iframe { width:100%;}
 
 .support-icon {
 	background:#ef3860;
-	border-radius:0px 0px 128px 128px;
+	border-radius:50%;
 }
-.support-icon span {
-	color:#fff;
-}
-
 .sticky {
 	position:fixed;
 	top: 0;
@@ -384,51 +380,10 @@ img,iframe { width:100%;}
 	display:block;
 }
 .card {
-//	margin:16px;
-	margin-top:8px;
+	padding:0px 16px 0px 16px;
 	background:#fff;
-//	border-radius:6.4px;
-	border: 1px solid #d1d5db;
 }
-.card .card-title {
-	font-weight:500;
-	font-size:16px;
-	display:flex;
-	justify-content:space-between;
-	align-items:center;
-	padding: 1rem;
 
-}
-.card .card-list {
-	display:flex;
-	justify-content:space-between;
-	padding: 1rem;
-	margin: 0.5rem 0;
-	margin-top:8px;
-	display:none;
-	border-bottom:2px solid #f4f4f4;
-}
-.card .card-list:last-child {
-	border-bottom:0px;
-}
-.card .card-list:first-child {
-	border-top:1px solid #ccc;
-}
-.card-list-item {
-	display:flex;
-	align-items:center;
-	
-}
-.card .card-list-icon img {
-	width:32px;
-}
-.card .card-list-content {
-	flex:1;
-	margin-left:16px;
-	color:#212121;
-//	font-weight:300;
-	font-size:15px;
-}
 .sub-header-container{
 	width:100%;
 	border-bottom:1px solid #ccc;
@@ -533,35 +488,67 @@ img {
 	color:#212121;
 	font-size:24px;
 }
-.podcast-series-container {
+.podcast-list-wrapper {
 	padding:16px;
 	background:#ffff;
+	border-bottom:1px solid #ccc;
 }
 
-.podcast-series {
+.podcast-list {
 	display:flex;
 	overflow-x:scroll;
 	margin-top:8px;
 }
-.podcast-series img {
+.podcast-thumbnail {
 	width:90px;
 	height:90px;
-	border-radius:8px;
+	border-radius:4px;
 	background:skyblue;
 }
-.podcast-card {
+.podcast-list-item {
 	display:flex;
 	flex-direction:column;
 	margin-right:16px;
+	color:#212121;
 }
-.podcast-series .podcast-card span {
-//	font-weight:500;
+.ea-input-container {
+	border-bottom:1px solid #ccc;
+}
+.ea-social-input {
+	display:flex;
+	justify-content:space-between;
+	padding:8px 0px 0px 0px;
+}
+.ea-social-input img {
+	width:40px;
+	height:40px;
+	border-radius:50%;
+}
+.ea-input {
+	padding: 4px;
+	width:100%;
+	margin-left:8px;
+	border-radius:6.4px;
+	background:#f4f4f4;
+	border:1px solid #ccc;
+}
+.input-action-items {
+	margin-left:48px;
 	font-size:14px;
-	opacity:0.85;
-	margin-top:8px;
-	width:90px;
-	line-height:1.2;
+	display:flex;
 }
-.podcast-cards-header {
-	
+.input-action-items li {
+	flex:1;
+}
+.input-action-items li a {
+	color:#212121;
+	display:inline-block;
+	padding:16px 8px 16px 8px;
+	width:100%;
+	display:flex;
+	justify-content:center;
+}
+.input-action-items{
+	display:flex;
+	justify-content:space-between;
 }
